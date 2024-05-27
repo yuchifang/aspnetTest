@@ -8,6 +8,7 @@ builder.Services.AddDbContext<MyDatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyDbConnection")));
 builder.Services.AddDistributedMemoryCache();
 
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
